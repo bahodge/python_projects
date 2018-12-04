@@ -1,4 +1,5 @@
 import random
+
 global collector
 collector = {}
 
@@ -31,7 +32,7 @@ def matching_dice_rolled(dice):
 
 def roll_the_dice(times):
     counter = 0
-    for x in range(1, times):
+    for _ in range(1, times):
         result = roll_and_compare()
         if result == True:
             counter += 1
@@ -42,5 +43,5 @@ def roll_the_dice(times):
     print("Number of Matches: " + str(counter))
 
 
-res = input("How Many Times To Roll the Dice??: ")
+res = input("How Many Times To Roll the Dice?: ")
 roll_the_dice(int(res))
