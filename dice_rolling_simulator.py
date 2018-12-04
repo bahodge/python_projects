@@ -19,8 +19,8 @@ def compare_dice_rolls(dice_1, dice_2):
 def roll_and_compare():
     d1 = roll_dice()
     d2 = roll_dice()
-    res = compare_dice_rolls(d1, d2)
-    return res
+    result = compare_dice_rolls(d1, d2)
+    return result
 
 
 def matching_dice_rolled(dice):
